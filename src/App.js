@@ -8,7 +8,7 @@ function App() {
 
   function getMealData() {
     fetch(
-      `https://api.spoonacular.com/recipes/random?apiKey=f652fa00374c43afbcb00aada9bcbd92&number=2`
+      `https://api.spoonacular.com/recipes/random?apiKey=f652fa00374c43afbcb00aada9bcbd92&number=10`
     )
     .then((response) => response.json())
     .then((data) => {
