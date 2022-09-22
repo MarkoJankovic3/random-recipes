@@ -2,13 +2,15 @@ import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import RecipeList from './RecipeList';
 import MealPage from './MealPage';
+import './App.css';
+import { Button } from 'antd';
 
 function App() {
   const [mealData, setMealData] = useState(null);
 
   function getMealData() {
     fetch(
-      `https://api.spoonacular.com/recipes/random?apiKey=f652fa00374c43afbcb00aada9bcbd92&number=10`
+      `https://api.spoonacular.com/recipes/random?apiKey=f652fa00374c43afbcb00aada9bcbd92&number=1`
     )
     .then((response) => response.json())
     .then((data) => {
@@ -24,10 +26,12 @@ function App() {
     <Router>
       <Routes>
         <Route path='/' element={
-        <div className='App'>
-        <button onClick={getMealData}>Get Recipes</button>
-        {mealData && <RecipeList recipeData={mealData} />} 
-        </div> } />
+        <section className='hero'>
+          <div className='bg-overlay'>
+            <Button type="primary" onClick={getMealData}>Get Recipes</Button>
+            {mealData && <RecipeList recipeData={mealData} />} 
+          </div>
+        </section> } />
         <Route path='/meal/:mealId' element={<MealPage />} />
       </Routes>
     </Router>
