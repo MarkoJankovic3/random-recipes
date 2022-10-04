@@ -10,7 +10,7 @@ function App() {
 
   function getMealData() {
     fetch(
-      `https://api.spoonacular.com/recipes/random?apiKey=f652fa00374c43afbcb00aada9bcbd92&number=1`
+      `https://api.spoonacular.com/recipes/random?apiKey=f652fa00374c43afbcb00aada9bcbd92&number=9`
     )
     .then((response) => response.json())
     .then((data) => {
@@ -27,8 +27,11 @@ function App() {
       <Routes>
         <Route path='/' element={
         <section className='hero'>
-          <div className='bg-overlay'>
-            <Button type="primary" onClick={getMealData}>Get Recipes</Button>
+          <div className='bg-overlay'></div>
+          <div className='navbar'>
+            <Button className='special-button bordered' onClick={getMealData}>Get Recipes</Button>
+          </div>
+          <div>
             {mealData && <RecipeList recipeData={mealData} />} 
           </div>
         </section> } />

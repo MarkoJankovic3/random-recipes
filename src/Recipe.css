@@ -1,0 +1,30 @@
+.special-card {
+    background-color: #3e3e3e;
+    opacity: 1;
+    background-clip: border-box;
+    border: 2px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+    max-width: 540px;
+}
+
+.special-card-text {
+    color: var(--white-color);
+    font-size: var(--menu-font-size);
+    font-weight: var(--font-weight-normal);
+}
+
+.card-body {
+    padding: 1.25rem;
+    margin: 0.75rem;
+}
+
+.card-img {
+    width: 100%;
+    border-radius: calc(0.25rem - 1px);
+}
+
+.btn-warning {
+    color: #212529;
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
