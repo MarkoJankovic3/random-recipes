@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import RecipeList from './RecipeList';
 import MealPage from './MealPage';
-import './App.css';
+import './css/App.css';
 import { Button } from 'antd';
 
 function App() {

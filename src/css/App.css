@@ -1,0 +1,80 @@
+:root {
+    --primary-color: #fdd000;
+    --dark-color: #3e3e3e;
+    --white-color: #ffffff;
+
+    --base-font-family:     'Plain', sans-serif;
+    --font-weight-bold:     bold;
+    --font-weight-normal:   normal;
+    --font-weight-light:    300;
+    --font-weight-thin:     100;
+
+    --h1-font-size:         48px;
+    --h2-font-size:         36px;
+    --h3-font-size:         28px;
+    --h4-font-size:         24px;
+    --h5-font-size:         22px;
+    --h6-font-size:         22px;
+    --p-font-size:          18px;
+    --base-font-size:       16px;
+    --menu-font-size:       14px;
+    --border-radius-small:  2px;
+}
+
+body {
+    margin: 0;
+    display: block;
+}
+
+.hero {
+    background-image: url('../images/burger.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    min-height: 100vh;
+    position: relative;
+}
+
+.bg-overlay {
+    background: var(--dark-color);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.85;
+}
+
+.navbar {
+    text-align: center;
+    padding: 1rem;
+    margin: 0 0 3rem 0;
+}
+
+.special-button,
+.special-button:focus {
+    background: transparent;
+    border-radius: var(--border-radius-small);
+    padding: 14px 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+    width: 25rem;
+    height: 4rem;
+}
+
+.special-button.bordered:hover,
+.special-button:hover {
+    background-color: var(--primary-color);
+    border-color: transparent;
+    color: black;
+}
+
+.bordered,
+.special-button:focus {
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}

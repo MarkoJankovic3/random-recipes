@@ -1,7 +1,6 @@
 import { Card, Button, Typography, Row, Col, Image } from 'antd';
-import Meta from 'antd/lib/card/Meta';
 import { Link } from 'react-router-dom';
-import './Recipe.css';
+import './css/Recipe.css';
 
 export default function Recipe({ meal }) {
     const { Meta } = Card;
