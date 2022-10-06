@@ -31,7 +31,7 @@ function App() {
           <div className='navbar'>
             <Button className='special-button bordered' onClick={getMealData}>Get Recipes</Button>
           </div>
-          <div>
+          <div className='list'>
             {mealData && <RecipeList recipeData={mealData} />} 
           </div>
         </section> } />

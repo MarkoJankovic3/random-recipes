@@ -26,6 +26,16 @@ body {
     display: block;
 }
 
+.rows {
+    justify-content: center;
+    gap: 4rem;
+}
+
+.list {
+    margin-left: 9rem;
+    margin-top: 4rem;
+}
+
 .hero {
     background-image: url('../images/burger.jpg');
     background-size: cover;
