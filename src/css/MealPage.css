@@ -1,0 +1,43 @@
+.meal-hero {
+    background-image: url('../images/menu-background.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    min-height: 100vh;
+    position: relative;
+    align-items: center;
+}
+
+.return-header {
+    width: 100%;
+    background-color: var(--primary-color);
+    border: 2px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+    opacity: 1;
+}
+
+.recipe-content {
+    position: relative;
+    background-color: #3e3e3e;
+    opacity: 1;
+    background-clip: border-box;
+    border: 2px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+    max-width: 45rem;
+    max-height: 36rem;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.recipe-header {
+    height: 23rem;
+    background-color: #3e3e3e;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.recipe-list {
+    list-style: none;
+    font-size: large;
+}
